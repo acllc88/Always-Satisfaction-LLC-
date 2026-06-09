@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Always Satisfaction LLC – Professional Cleaning Services in Cincinnati</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Always Satisfaction LLC guarantees spotless results every time. Deep cleanings, standard cleanings, move-in/move-out, and commercial cleaning in Cincinnati & all local areas. Call (513) 926-2006." />
+  <meta name="keywords" content="cleaning service Cincinnati, deep cleaning, move-in move-out cleaning, residential cleaning, commercial cleaning, Always Satisfaction LLC" />
+  <meta name="author" content="Always Satisfaction LLC" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alwayssatisfactionllc.com/" />
+  <meta property="og:title" content="Always Satisfaction LLC – Cleaning at Its Best" />
+  <meta property="og:description" content="We guarantee we always leave satisfaction! Deep cleanings, move-in/move-out, residential & commercial. Serving Cincinnati & all local areas. Limited time: $40 OFF all deep cleanings!" />
+  <meta property="og:image" content="https://alwayssatisfactionllc.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Always Satisfaction LLC" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Always Satisfaction LLC – Cleaning at Its Best" />
+  <meta name="twitter:description" content="We guarantee we always leave satisfaction! Deep cleanings, move-in/move-out, residential & commercial. Serving Cincinnati & all local areas." />
+  <meta name="twitter:image" content="https://alwayssatisfactionllc.com/og-image.jpg" />
+
+  <!-- Favicon (inline SVG-based) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%231565C0'/><text y='44' x='8' font-size='38' font-family='serif'>🧹</text></svg>" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%231565C0'/><text y='44' x='8' font-size='38' font-family='serif'>🧹</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue-deep:   #0D47A1;
+      --blue-mid:    #1565C0;
+      --blue-light:  #42A5F5;
+      --blue-pale:   #E3F2FD;
+      --teal:        #00ACC1;
+      --green-badge: #5CB85C;
+      --green-dark:  #388E3C;
+      --gold:        #F9A825;
+      --white:       #FFFFFF;
+      --text-dark:   #0D2137;
+      --text-mid:    #2C4A6E;
+      --font-display: 'Fredoka One', cursive;
+      --font-body:    'Nunito', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      color: var(--text-dark);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      background: rgba(13, 71, 161, 0.97);
+      backdrop-filter: blur(8px);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 5%;
+      box-shadow: 0 2px 20px rgba(0,0,0,.25);
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      color: var(--white);
+      font-size: 1.3rem;
+      letter-spacing: .5px;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-cta {
+      background: var(--gold);
+      color: var(--text-dark);
+      font-weight: 800;
+      font-size: .85rem;
+      padding: 9px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: transform .2s, box-shadow .2s;
+      white-space: nowrap;
+    }
+    .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(249,168,37,.5); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(145deg, var(--blue-deep) 0%, var(--blue-mid) 45%, var(--teal) 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center;
+      padding: 110px 5% 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 70% 30%, rgba(66,165,245,.18) 0%, transparent 60%),
+                  radial-gradient(ellipse at 20% 80%, rgba(0,172,193,.15) 0%, transparent 55%);
+    }
+    .sparkle {
+      position: absolute;
+      font-size: 1.4rem;
+      animation: sparkle-float 4s ease-in-out infinite;
+      opacity: .7;
+    }
+    .sparkle:nth-child(1) { top: 18%; left: 8%;  animation-delay: 0s; }
+    .sparkle:nth-child(2) { top: 12%; right: 10%; animation-delay: 1s; }
+    .sparkle:nth-child(3) { top: 35%; right: 6%;  animation-delay: 2s; font-size: 1rem; }
+    .sparkle:nth-child(4) { bottom: 25%; left: 5%; animation-delay: 1.5s; font-size: 1rem; }
+    @keyframes sparkle-float {
+      0%,100% { transform: translateY(0) rotate(0deg); opacity: .7; }
+      50%      { transform: translateY(-12px) rotate(15deg); opacity: 1; }
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.3);
+      color: var(--white);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 50px;
+      margin-bottom: 22px;
+      position: relative; z-index: 1;
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 9vw, 6.5rem);
+      color: var(--white);
+      line-height: 1.05;
+      position: relative; z-index: 1;
+      text-shadow: 0 4px 30px rgba(0,0,0,.25);
+    }
+    .hero h1 .accent { color: var(--gold); }
+    .hero-sub {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      color: rgba(255,255,255,.88);
+      margin: 20px auto 36px;
+      max-width: 520px;
+      font-weight: 600;
+      position: relative; z-index: 1;
+      font-style: italic;
+    }
+    .hero-btns {
+      display: flex; gap: 14px; flex-wrap: wrap; justify-content: center;
+      position: relative; z-index: 1;
+    }
+    .btn-primary {
+      background: var(--gold);
+      color: var(--text-dark);
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: transform .2s, box-shadow .2s;
+      box-shadow: 0 4px 20px rgba(249,168,37,.4);
+    }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(249,168,37,.55); }
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 14px 32px;
+      border-radius: 50px;
+      border: 2px solid rgba(255,255,255,.6);
+      text-decoration: none;
+      transition: background .2s, border-color .2s;
+    }
+    .btn-outline:hover { background: rgba(255,255,255,.12); border-color: var(--white); }
+
+    /* Wave divider */
+    .wave { display: block; width: 100%; line-height: 0; }
+
+    /* ── OFFER BANNER ── */
+    .offer-strip {
+      background: var(--green-badge);
+      text-align: center;
+      padding: 18px 5%;
+    }
+    .offer-strip p {
+      color: var(--white);
+      font-weight: 800;
+      font-size: clamp(.9rem, 2.5vw, 1.15rem);
+      letter-spacing: .5px;
+    }
+    .offer-strip strong { color: var(--gold); font-size: 1.25em; }
+
+    /* ── SERVICES ── */
+    .section {
+      padding: 80px 5%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .section-label {
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      color: var(--blue-deep);
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+    .section-sub {
+      color: var(--text-mid);
+      font-size: 1.05rem;
+      max-width: 540px;
+      line-height: 1.7;
+      margin-bottom: 48px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+    }
+    .service-card {
+      background: var(--blue-pale);
+      border-radius: 20px;
+      padding: 32px 24px;
+      text-align: center;
+      transition: transform .25s, box-shadow .25s;
+      border: 2px solid transparent;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(13,71,161,.13);
+      border-color: var(--blue-light);
+    }
+    .service-icon { font-size: 2.8rem; margin-bottom: 16px; }
+    .service-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: var(--blue-deep);
+      margin-bottom: 8px;
+    }
+    .service-card p {
+      font-size: .9rem;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+
+    /* ── OFFER SECTION ── */
+    .offer-section {
+      background: linear-gradient(135deg, var(--blue-deep) 0%, var(--blue-mid) 60%, var(--teal) 100%);
+      padding: 80px 5%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .offer-section::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at center, rgba(255,255,255,.06) 0%, transparent 70%);
+    }
+    .offer-badge {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--green-badge);
+      border: 5px solid var(--green-dark);
+      border-radius: 50%;
+      width: 230px; height: 230px;
+      margin: 0 auto 36px;
+      position: relative; z-index: 1;
+      box-shadow: 0 8px 40px rgba(0,0,0,.3);
+      transition: transform .3s;
+    }
+    .offer-badge:hover { transform: scale(1.05) rotate(-2deg); }
+    .offer-badge .ltd {
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+    .offer-badge .amount {
+      font-family: var(--font-display);
+      font-size: 5rem;
+      color: var(--white);
+      line-height: 1;
+    }
+    .offer-badge .amount sup { font-size: 2rem; vertical-align: top; margin-top: 12px; }
+    .offer-badge .desc {
+      font-weight: 800;
+      font-size: .85rem;
+      color: var(--white);
+      text-align: center;
+      line-height: 1.3;
+    }
+    .offer-section h2 {
+      font-family: var(--font-display);
+      color: var(--white);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      margin-bottom: 12px;
+      position: relative; z-index: 1;
+    }
+    .offer-expiry {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--text-dark);
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 10px 28px;
+      border-radius: 50px;
+      margin: 20px 0 32px;
+      position: relative; z-index: 1;
+    }
+
+    /* ── WHY US ── */
+    .why-section {
+      background: var(--blue-pale);
+      padding: 80px 5%;
+    }
+    .why-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+    .why-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .why-check {
+      width: 42px; height: 42px;
+      min-width: 42px;
+      background: var(--green-badge);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 12px rgba(92,184,92,.35);
+    }
+    .why-item h4 {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      color: var(--blue-deep);
+      margin-bottom: 5px;
+    }
+    .why-item p {
+      font-size: .9rem;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+
+    /* ── CONTACT ── */
+    .contact-section {
+      padding: 80px 5%;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .contact-info h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--blue-deep);
+      margin-bottom: 10px;
+    }
+    .contact-info p {
+      color: var(--text-mid);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform .2s;
+    }
+    .contact-item:hover { transform: translateX(4px); }
+    .contact-icon {
+      width: 50px; height: 50px;
+      background: var(--blue-mid);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+    .contact-item-text strong {
+      display: block;
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--blue-deep);
+    }
+    .contact-item-text span {
+      font-size: .85rem;
+      color: var(--text-mid);
+    }
+    .serve-box {
+      background: linear-gradient(135deg, var(--blue-deep), var(--teal));
+      border-radius: 24px;
+      padding: 40px;
+      text-align: center;
+      color: var(--white);
+    }
+    .serve-box .serve-icon { font-size: 3rem; margin-bottom: 16px; }
+    .serve-box h3 {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    .serve-box p {
+      font-size: 1rem;
+      opacity: .88;
+      line-height: 1.6;
+    }
+    .serve-box .sparkles {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      letter-spacing: 6px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--blue-deep);
+      color: rgba(255,255,255,.7);
+      text-align: center;
+      padding: 28px 5%;
+      font-size: .85rem;
+    }
+    footer strong {
+      color: var(--white);
+      font-family: var(--font-display);
+      font-size: 1rem;
+      display: block;
+      margin-bottom: 6px;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 700px) {
+      .contact-section { grid-template-columns: 1fr; gap: 40px; }
+      .hero h1 { font-size: 2.8rem; }
+      .offer-badge { width: 190px; height: 190px; }
+      .offer-badge .amount { font-size: 4rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .sparkle, .offer-badge { animation: none; transition: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Always <span>Satisfaction</span> LLC</div>
+    <a href="tel:5139262006" class="nav-cta">📞 Call Now</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <span class="sparkle">✦</span>
+    <span class="sparkle">✦</span>
+    <span class="sparkle">✦</span>
+    <span class="sparkle">✦</span>
+
+    <div class="hero-badge">✨ Cincinnati's Trusted Cleaning Experts</div>
+    <h1>Always<br><span class="accent">Satisfaction</span><br>LLC</h1>
+    <p class="hero-sub">"We guarantee we always leave satisfaction!"</p>
+    <div class="hero-btns">
+      <a href="tel:5139262006" class="btn-primary">📞 (513) 926-2006</a>
+      <a href="mailto:alwayssatisfaction9@gmail.com" class="btn-outline">✉ Email Us</a>
+    </div>
+  </section>
+
+  <!-- WAVE -->
+  <svg class="wave" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,30 C360,70 1080,-10 1440,30 L1440,60 L0,60 Z" fill="#5CB85C"/>
+  </svg>
+
+  <!-- OFFER STRIP -->
+  <div class="offer-strip">
+    <p>🎉 Limited Time: <strong>$40 OFF</strong> All Deep Cleanings — <strong>Offer Ends June 30th!</strong></p>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="section">
+    <p class="section-label">What We Do</p>
+    <h2 class="section-title">Cleaning at Its Best.</h2>
+    <p class="section-sub">From a thorough deep clean to routine maintenance, we handle every corner with care and professionalism.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🧽</div>
+        <h3>Deep Cleanings</h3>
+        <p>Top-to-bottom intensive cleaning that leaves your space sparkling like new.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🧹</div>
+        <h3>Standard Cleanings</h3>
+        <p>Regular maintenance cleanings to keep your home fresh and consistently tidy.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📦</div>
+        <h3>Move-In / Move-Out</h3>
+        <p>Start or end your stay with a perfectly clean, stress-free space.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏢</div>
+        <h3>Residential &amp; Commercial</h3>
+        <p>Homes, apartments, offices — we clean any space to the highest standard.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔍</div>
+        <h3>Detail Oriented</h3>
+        <p>Reliable service with a meticulous eye for every corner, surface, and finish.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- OFFER SECTION -->
+  <section class="offer-section">
+    <div class="offer-badge">
+      <span class="ltd">Limited Time</span>
+      <span class="amount"><sup>$</sup>40</span>
+      <span class="desc">OFF ALL<br>DEEP CLEANINGS</span>
+    </div>
+    <h2>Book Your Deep Clean Today</h2>
+    <p style="color:rgba(255,255,255,.8);max-width:480px;margin:0 auto;font-size:1rem;line-height:1.7;position:relative;z-index:1;">
+      Don't miss out — this exclusive discount won't last. Book your deep cleaning before June 30th and save $40.
+    </p>
+    <div class="offer-expiry">⏰ Offer Ends June 30th</div>
+    <div style="position:relative;z-index:1;">
+      <a href="tel:5139262006" class="btn-primary">Book Now — (513) 926-2006</a>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why-section">
+    <div class="why-inner">
+      <p class="section-label">Why Choose Us</p>
+      <h2 class="section-title">We leave your space spotless<br>and you completely satisfied.</h2>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-check">✓</div>
+          <div>
+            <h4>Satisfaction Guaranteed</h4>
+            <p>We don't leave until you're fully happy with the result — every single time.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-check">✓</div>
+          <div>
+            <h4>Reliable &amp; Punctual</h4>
+            <p>We show up on time, every time. You can count on us to be there when you need us.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-check">✓</div>
+          <div>
+            <h4>Detail-Oriented Team</h4>
+            <p>Our cleaners are trained to notice what others miss — baseboards, vents, and all.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-check">✓</div>
+          <div>
+            <h4>Trusted Locally</h4>
+            <p>Proudly serving Cincinnati and surrounding areas with care and professionalism.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section style="background:var(--white)">
+    <div class="contact-section">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>Ready for a cleaner space? Reach out and we'll schedule your cleaning at a time that works for you.</p>
+
+        <a href="tel:5139262006" class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div class="contact-item-text">
+            <strong>(513) 926-2006</strong>
+            <span>Call or text us anytime</span>
+          </div>
+        </a>
+
+        <a href="mailto:alwayssatisfaction9@gmail.com" class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-item-text">
+            <strong>alwayssatisfaction9@gmail.com</strong>
+            <span>We'll respond promptly</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="serve-box">
+        <div class="serve-icon">📍</div>
+        <h3>Serving Cincinnati &amp; All Local Areas</h3>
+        <p>We proudly provide our top-quality cleaning services throughout Cincinnati and all surrounding communities.</p>
+        <div class="sparkles">✦ ✦ ✦</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <strong>Always Satisfaction LLC</strong>
+    We leave your space spotless and you completely satisfied! &nbsp;·&nbsp;
+    <a href="tel:5139262006">(513) 926-2006</a> &nbsp;·&nbsp;
+    <a href="mailto:alwayssatisfaction9@gmail.com">alwayssatisfaction9@gmail.com</a>
+    <br><br>
+    © 2025 Always Satisfaction LLC. All rights reserved. Serving Cincinnati &amp; All Local Areas.
+  </footer>
+
+</body>
+</html>
